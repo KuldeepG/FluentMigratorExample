@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMigrations", "DBMigrations\DBMigrations.csproj", "{0E180008-A4D8-4BDB-A140-0940AFE34CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations", "Migrations\Migrations.csproj", "{5AC7D969-C8DE-46DD-977E-602CC76F8ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{1B3604BA-49BA-4C00-B728-8EFA0CA63E2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1DE7A5DD-8C40-4DD0-9A5F-3E01AA8B554F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E180008-A4D8-4BDB-A140-0940AFE34CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E180008-A4D8-4BDB-A140-0940AFE34CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E180008-A4D8-4BDB-A140-0940AFE34CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E180008-A4D8-4BDB-A140-0940AFE34CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC7D969-C8DE-46DD-977E-602CC76F8ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC7D969-C8DE-46DD-977E-602CC76F8ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC7D969-C8DE-46DD-977E-602CC76F8ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC7D969-C8DE-46DD-977E-602CC76F8ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3604BA-49BA-4C00-B728-8EFA0CA63E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3604BA-49BA-4C00-B728-8EFA0CA63E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3604BA-49BA-4C00-B728-8EFA0CA63E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3604BA-49BA-4C00-B728-8EFA0CA63E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Migrate">	
+   <UsingTask TaskName="FluentMigrator.MSBuild.Migrate" 
+        AssemblyFile="./packages/FluentMigrator.Tools.1.1.1.0/tools/AnyCPU/40/FluentMigrator.MSBuild.dll"/>
+
+  <Target Name="Migrate" >
+    <Message Text="Starting FluentMigrator Migration"/>
+    <Migrate Database="mysql"
+             Connection="server=192.168.1.11;Database=School;Uid=root;Pwd=;"
+             Target="./Migrations/bin/Debug/Migrations.dll">
+    </Migrate>
+  </Target>
+  
+  <Target Name="MigrateRollbackAll" >
+    <Message Text="Starting FluentMigrator Rollback All"/>
+    <Migrate Database="mysql"
+             Connection="Server=192.168.1.11;Database=School;Uid=root;Pwd=;"
+             Target="./Migrations/bin/Debug/Migrations.dll"
+	     Task="rollback:all">
+    </Migrate>
+  </Target>
+
+</Project>
